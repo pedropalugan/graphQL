@@ -2,6 +2,8 @@ const { gql, ApolloServer } = require('apollo-server')
 
 let books = []
 
+
+//Create the types of the items of the database, such as the table, the query and the mutations
 const typeDefs = gql `
     type Book {
         id: ID!
@@ -21,7 +23,7 @@ const typeDefs = gql `
     }
 `;
 
-
+//Creating the functions of the database such as get, post, delete and update ;)...
 const resolvers = {
     Query:{
         books: () => {
