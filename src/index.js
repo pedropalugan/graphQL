@@ -56,3 +56,7 @@ const resolvers = {
 const app = new ApolloServer({ typeDefs, resolvers })
 
 app.listen().then(({url}) => console.log('Server Runing on ' + url))
+
+//Get the front-end code and implement on this code so
+//the data on the database that is gotten by this code
+//is rendered on the front-end
